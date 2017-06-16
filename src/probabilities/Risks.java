@@ -10,6 +10,6 @@ public class Risks {
     public Risks() {
 
         MARTINGALE_COEF = (float) MartingaleStrategy.getInit_coef();
-
+        
     }
 }
