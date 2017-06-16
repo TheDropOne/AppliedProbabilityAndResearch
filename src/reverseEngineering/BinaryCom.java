@@ -3,7 +3,7 @@ package reverseEngineering;
 import model.Point;
 
 /**
- * Created by Semen on 09-Jun-17.
+ Created by Semen on 30-May-17
  */
 public class BinaryCom {
 
@@ -15,6 +15,7 @@ public class BinaryCom {
     // TODO
     public static Point getCurrentPointFromPlot(Object... initObjects){
 
+        //FIX After using binary as source
         return  new Point(0,0);
     }
 }

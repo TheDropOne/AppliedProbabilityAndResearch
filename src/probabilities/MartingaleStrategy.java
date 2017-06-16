@@ -1,8 +1,9 @@
 package probabilities;
 
+import model.State;
+
 /**
- * Created by Semen on 09-Jun-17.
- */
+ Created by Semen on 31-May-17 */
 public class MartingaleStrategy {
 
     public static double init_coef = 2.5;
@@ -14,7 +15,8 @@ public class MartingaleStrategy {
         return init_coef;
     }
 
-    public static void setInit_coef(double init_coef) {
-        MartingaleStrategy.init_coef = init_coef;
+    //TODO
+    public static float calculateRateAmount(State currentState){
+        return 1.0f;
     }
 }

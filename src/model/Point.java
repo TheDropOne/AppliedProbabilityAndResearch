@@ -1,7 +1,7 @@
 package model;
 
 /**
- * Created by Semen on 16-Jun-17.
+ * Created by Semen on 28-May-17.
  */
 public class Point {
     /**

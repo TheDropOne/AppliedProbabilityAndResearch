@@ -5,7 +5,7 @@ import projectProperties.Settings;
 import java.io.File;
 
 /**
- * Created by Semen on 16-Jun-17.
+ * Created by Semen on 28-May-17
  */
 public class State {
 
@@ -51,6 +51,10 @@ public class State {
         return secondDerivative;
     }
 
+    public State getPreviousState() {
+        return previousState;
+    }
+
     /**
      * Calculating derivative using formula from mathematical analysis
      *
@@ -76,8 +80,6 @@ public class State {
         String filename = Settings.STATE_STORAGE_FILE;
         File file = new File(filename);
         // FIX -> reading from file using projectProperties.Settings fileType field
-
-        //Пожалуйста, не стирай комменты кроме этого
     }
 
 
@@ -110,7 +112,7 @@ public class State {
         stringBuilder.append(System.lineSeparator());
         stringBuilder.append("\t Point = ").append(currentPoint);
         stringBuilder.append(System.lineSeparator());
-        stringBuilder.append("value = ").append(String.valueOf(functionValue).substring(0,10));
+        stringBuilder.append("value = ").append(String.valueOf(currentPoint.getFunctionValue()).substring(0,10));
         return stringBuilder.toString();
     }
 }
