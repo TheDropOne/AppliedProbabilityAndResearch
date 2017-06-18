@@ -16,6 +16,12 @@ public class MartingaleStrategy {
     }
 
     //TODO
+
+    /**
+     * This method used to calculate optional coef on current state
+     * @param currentState state of system at the moment of call
+     * @return optional coef for betting, -1.0f on error
+     */
     public static float calculateRateAmount(State currentState){
         return 1.0f;
     }

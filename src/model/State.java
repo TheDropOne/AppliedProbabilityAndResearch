@@ -80,6 +80,8 @@ public class State {
         String filename = Settings.STATE_STORAGE_FILE;
         File file = new File(filename);
         // FIX -> reading from file using projectProperties.Settings fileType field
+
+
     }
 
 

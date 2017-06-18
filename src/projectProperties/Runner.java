@@ -53,11 +53,17 @@ public class Runner {
                         MartingaleStrategy.calculateRateAmount(currentState);
                         System.err.println(currentState);
                     }
+                    try {
+                        Thread.sleep(Settings.ITERATION_TIME);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                        interrupted = true;
+                    }
                 }
             }
         });
-
-
         analysisThread.start();
+
+
     }
 }
